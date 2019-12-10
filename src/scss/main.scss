@@ -1,6 +1,3 @@
 @import "../../node_modules/reset-css/sass/reset";
 @import "./settings/fonts";
-
-body {
-  font-family: $fontBase;
-}
+@import "./modules/base";
