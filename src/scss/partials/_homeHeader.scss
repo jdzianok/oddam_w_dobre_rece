@@ -1,0 +1,91 @@
+.homeHeader {
+  height: 963px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+
+  .heroImg {
+    height: 100%;
+    width: 60%;
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -480px 0;
+  }
+  .navContainer {
+    width: 40%;
+    margin-right: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .menu {
+      width: 90%;
+      min-width: 583px;
+      margin-top: 40px;
+
+      .topMenu {
+        text-align: right;
+
+        .registerBtn {
+          padding: 10px;
+          margin-right: -10px;
+        }
+        .menuBtn {
+          font-size: 14px;
+          border: 1px solid transparent;
+
+          &:hover {
+            border: 1px solid $yellow;
+          }
+        }
+        .logginBtn {
+          padding: 10px;
+
+          margin-right: 20px;
+        }
+      }
+
+      .bottomMenu {
+        margin-top: 30px;
+        ul {
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            cursor: pointer;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .homeIntro {
+      width: 710px;
+      height: 350px;
+      align-self: center;
+      margin-top: 200px;
+      text-align: center;
+      font-size: 38px;
+      color: $dark;
+
+      div {
+        padding-bottom: 25px;
+
+        img {
+          margin-top: 25px;
+        }
+
+        button {
+          margin: 25px 20px;
+          font-size: 36px;
+          font-weight: 300;
+          width: 310px;
+          height: 120px;
+          color: $dark;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,10 @@
 @import "../../node_modules/reset-css/sass/reset";
 @import "./settings/fonts";
+@import "./settings/colors";
 @import "./modules/base";
+@import "./partials/homeHeader";
+@import "./partials/homeThreeColumns";
+@import "./partials/homeSimpleSteps";
+@import "./partials/homeAboutUs";
+@import "./partials/homePagination";
+@import "./partials/homeContact";
