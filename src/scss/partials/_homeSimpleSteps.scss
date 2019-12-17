@@ -1,0 +1,82 @@
+.simpleStepsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .simpleHeader {
+    width: 100%;
+    text-align: center;
+
+    p {
+      font-size: 38px;
+      color: $dark;
+      padding: 50px 0 30px 0;
+    }
+  }
+
+  .simpleMain {
+    width: 100%;
+    background-color: $light;
+    margin-top: 30px;
+
+    .simpleContent {
+      display: flex;
+      justify-content: space-around;
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      padding: 60px 0;
+
+      .simpleStep {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+
+        .simpleTitle {
+          font-size: 18px;
+          padding: 15px 0;
+          text-align: center;
+        }
+
+        hr {
+          width: 80px;
+          height: 1px;
+          color: #707070;
+        }
+
+        .simpleSubtitle {
+          font-size: 16px;
+          line-height: 1.3;
+          text-align: center;
+        }
+      }
+
+      .simpleStep:nth-child(3) {
+        img {
+          margin-top: -5px;
+        }
+        .simpleTitle {
+          margin-bottom: -4px;
+        }
+      }
+    }
+  }
+
+  .simpleButtonContainer {
+    width: 100%;
+
+    .simpleBtn {
+      display: block;
+      margin: 50px auto;
+      font-size: 36px;
+      font-weight: 300;
+      text-transform: uppercase;
+      width: 310px;
+      height: 120px;
+      color: $dark;
+      background-color: transparent;
+    }
+  }
+}

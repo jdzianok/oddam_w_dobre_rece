@@ -1,0 +1,190 @@
+{
+  "foundations": [
+    {
+      "id": 1,
+      "label": "Fundacja 'Dbam o Zdrowie'",
+      "items": [
+        {
+          "mission": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+          "description": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Fundacja 'Dla Dzieci'",
+      "items": [
+        {
+          "mission": "Cel i misja: Pomoc dzieciom z ubogich rodzin",
+          "description": "ubrania, meble, zabawki"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Fundacja 'Bez Domu'",
+      "items": [
+        {
+          "mission": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania",
+          "description": "ubrania, jedzenie, ciepłe koce"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Fundacja 4",
+      "items": [
+        {
+          "mission": "Cel i misja: ",
+          "description": "opis"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Fundacja 5",
+      "items": [
+        {
+          "mission": "Cel i misja: ",
+          "description": "opis"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Fundacja 6",
+      "items": [
+        {
+          "mission": "Cel i misja: ",
+          "description": "opis"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Fundacja 7",
+      "items": [
+        {
+          "mission": "Cel i misja: ",
+          "description": "opis"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Fundacja 8",
+      "items": [
+        {
+          "mission": "Cel i misja: ",
+          "description": "opis"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Fundacja 9",
+      "items": [
+        {
+          "mission": "Cel i misja: ",
+          "description": "opis"
+        }
+      ]
+    }
+  ],
+
+  "organisations": [
+    {
+      "id": 1,
+      "label": "Organizacja Lorem Ipsum 1",
+      "items": [
+        {
+          "mission": "Cel i misja: Donec non commodo eros, eget bibendum sapien.",
+          "description": "Aliquam vitae purus libero."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Organizacja Lorem Ipsum 2",
+      "items": [
+        {
+          "mission": "Cel i misja: Mauris laoreet malesuada metus ac congue.",
+          "description": "Morbi et viverra orci, ac porta augue. "
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Organizacja Lorem Ipsum 3",
+      "items": [
+        {
+          "mission": "Cel i misja:  Vestibulum in nulla sit amet libero efficitur hendrerit ut eu dolor. ",
+          "description": "Nam lobortis venenatis enim eget sagittis."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Organizacja Lorem Ipsum 4",
+      "items": [
+        {
+          "mission": "Cel i misja: Curabitur sodales, nisi ut fringilla placeratet.",
+          "description": "Cras malesuada a nisl varius fermentum. "
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Organizacja Lorem Ipsum 5",
+      "items": [
+        {
+          "mission": "Cel i misja: ",
+          "description": "opis"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Organizacja Lorem Ipsum 6",
+      "items": [
+        {
+          "mission": "Cel i misja: ",
+          "description": "opis"
+        }
+      ]
+    }
+  ],
+
+  "locals": [
+    {
+      "id": 1,
+      "label": "Zbiórka Lorem Ipsum 1",
+      "items": [
+        {
+          "mission": "Vivamus enim quam, lobortis sed nunc sed, placerat faucibus sem. ",
+          "description": "Egestas, sed, tempus"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Zbiórka Lorem Ipsum 2",
+      "items": [
+        {
+          "mission": "Fusce eu urna vel orci aliquet hendrerit non quis magna.",
+          "description": "Ut, aliquam, purus, sit, amet"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Zbiórka Lorem Ipsum 3",
+      "items": [
+        {
+          "mission": "Aliquam sit amet lobortis urna.",
+          "description": "Mi, quis, hendrerit, dolor"
+        }
+      ]
+    }
+  ]
+}
