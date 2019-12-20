@@ -2,22 +2,28 @@
   height: 963px;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   overflow: hidden;
 
   .heroImg {
     height: 100%;
     width: 60%;
+    // max-width: 700px;
     background-image: url("../../assets/Home-Hero-Image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -480px 0;
+    background-position: -540px 0;
   }
   .navContainer {
     width: 40%;
-    margin-right: 142px;
+    margin-right: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    button {
+      outline: none;
+    }
 
     .menu {
       width: 90%;
@@ -26,22 +32,36 @@
 
       .topMenu {
         text-align: right;
+        display: flex;
+        justify-content: flex-end;
 
-        .registerBtn {
+        .user {
+          margin-right: 30px;
+          align-self: center;
+        }
+        .registerBtn,
+        .logoutBtn {
           padding: 10px;
           margin-right: -10px;
         }
         .menuBtn {
           font-size: 14px;
           border: 1px solid transparent;
+          color: $dark;
+          text-decoration: none;
 
           &:hover {
             border: 1px solid $yellow;
           }
-        }
-        .logginBtn {
-          padding: 10px;
 
+          .link {
+            color: $dark;
+            text-decoration: none;
+          }
+        }
+        .logginBtn,
+        .loggedBtn {
+          padding: 10px;
           margin-right: 20px;
         }
       }
@@ -55,16 +75,22 @@
           li {
             cursor: pointer;
             font-size: 18px;
+
+            .link {
+              color: $dark;
+              text-decoration: none;
+            }
           }
         }
       }
     }
 
     .homeIntro {
-      width: 710px;
+      width: 100%;
+      min-width: 600px;
       height: 350px;
       align-self: center;
-      margin-top: 200px;
+      margin: 200px 30px 0 120px;
       text-align: center;
       font-size: 38px;
       color: $dark;
@@ -75,15 +101,22 @@
         img {
           margin-top: 25px;
         }
-
+      }
+      .buttonContainer {
+        // width: 600px;
         button {
           margin: 25px 20px;
-          font-size: 36px;
+          font-size: 28px;
           font-weight: 300;
-          width: 310px;
-          height: 120px;
+          width: 260px;
+          height: 90px;
           color: $dark;
           background-color: transparent;
+
+          .link {
+            color: $dark;
+            text-decoration: none;
+          }
         }
       }
     }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Decoration from "../../assets/Decoration.svg";
 import Icon1 from "../../assets/Icon-1.svg";
 import Icon2 from "../../assets/Icon-2.svg";
@@ -56,8 +57,9 @@ class HomeSimpleSteps extends Component {
         </div>
         <div className="simpleButtonContainer">
           <button className="simpleBtn">
-            Oddaj <br />
-            rzeczy
+            <Link className="link" to="/logowanie">
+              ODDAJ <br /> RZECZY{" "}
+            </Link>
           </button>
         </div>
       </div>

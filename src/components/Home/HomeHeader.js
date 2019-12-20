@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Navigation from "../Navigation/NavigationComponent";
 import Decoration from "../../assets/Decoration.svg";
 
@@ -9,7 +10,7 @@ class HomeHeader extends Component {
       <section className="homeHeader">
         <div className="heroImg"></div>
         <div className="navContainer">
-          <Navigation state={this.props} />
+          <Navigation isLogged={this.props.isLogged} />
           <div className="homeIntro">
             <div>
               <p>Zacznij pomagać!</p>
@@ -20,16 +21,16 @@ class HomeHeader extends Component {
             <div>
               <img src={Decoration} alt="decor" />
             </div>
-            <div>
+            <div className="buttonContainer">
               <button>
-                ODDAJ
-                <br />
-                RZECZY
+                <Link className="link" to="/logowanie">
+                  ODDAJ <br /> RZECZY{" "}
+                </Link>
               </button>
               <button>
-                ZORGANIZUJ
-                <br />
-                ZBIÓRKĘ
+                <Link className="link" to="/logowanie">
+                  ZORGANIZUJ <br /> ZBIÓRKĘ{" "}
+                </Link>
               </button>
             </div>
           </div>
