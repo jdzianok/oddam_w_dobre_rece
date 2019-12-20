@@ -16,12 +16,14 @@ class App extends Component {
 
   componentDidMount = () => {
     firebase.auth().onAuthStateChanged(user => {
-      if (!user) return;
-      else {
+      if (!user) {
+        this.setState({ user: null });
+      } else {
         this.setState({ user: user.email });
       }
     });
   };
+
   render() {
     return (
       <Router>
