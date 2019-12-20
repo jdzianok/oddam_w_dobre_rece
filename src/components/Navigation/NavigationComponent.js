@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link, withRouter } from "react-router-dom";
+const firebase = require("firebase");
 
 const options = {
   activeClass: "active",
@@ -11,28 +12,49 @@ const options = {
 };
 
 class NavigationComponent extends Component {
-  state = {};
+  logout = () => {
+    firebase.auth().signOut();
+    this.props.history.push("/wylogowano");
+  };
 
   render() {
-    const { isLogged } = this.props.state.state;
+    const { isLogged } = this.props;
+    console.log(isLogged);
     return (
       <div className="menu">
         <div className="topMenu">
+          {isLogged ? <p className="user">Witaj {isLogged}!</p> : null}
           <button
             className={isLogged ? "menuBtn loggedBtn" : "menuBtn logginBtn"}
           >
-            {isLogged ? "Oddaj Rzeczy" : "Zaloguj"}
+            {isLogged ? (
+              <Link className="link" to="/oddaj-rzeczy">
+                Oddaj Rzeczy
+              </Link>
+            ) : (
+              <Link className="link" to="/logowanie">
+                Zaloguj
+              </Link>
+            )}
           </button>
           <button
             className={isLogged ? "menuBtn logoutBtn" : "menuBtn registerBtn"}
           >
-            {isLogged ? "Wyloguj" : "Załóż konto"}
+            {isLogged ? (
+              <p className="logOut" onClick={() => this.logout()}>
+                Wyloguj
+              </p>
+            ) : (
+              <Link className="link" to="/rejestracja">
+                Załóż konto
+              </Link>
+            )}
           </button>
         </div>
         <nav className="bottomMenu">
           <ul>
             <li>
-              <NavLink to="/" activeClassName="active">
+              <NavLink className="link" to="/" activeClassName="active">
                 Start
               </NavLink>
             </li>
@@ -63,4 +85,4 @@ class NavigationComponent extends Component {
   }
 }
 
-export default NavigationComponent;
+export default withRouter(NavigationComponent);

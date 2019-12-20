@@ -1,0 +1,122 @@
+button {
+  outline: none;
+}
+.loginRegisterOut {
+  width: 100%;
+  padding: 0 142px 30px 0;
+  display: flex;
+  justify-content: flex-end;
+
+  .menu {
+    width: 50%;
+    min-width: 583px;
+    margin-top: 40px;
+
+    .topMenu {
+      text-align: right;
+
+      .registerBtn {
+        padding: 10px;
+        margin-right: -10px;
+      }
+      .menuBtn {
+        font-size: 14px;
+        border: 1px solid transparent;
+
+        &:hover {
+          border: 1px solid $yellow;
+        }
+        .link {
+          color: $dark;
+          text-decoration: none;
+        }
+      }
+      .logginBtn {
+        padding: 10px;
+
+        margin-right: 20px;
+      }
+    }
+
+    .bottomMenu {
+      margin-top: 30px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          cursor: pointer;
+          font-size: 18px;
+          padding: 10px 10px;
+          border: 1px solid transparent;
+
+          .link {
+            color: $dark;
+            text-decoration: none;
+          }
+
+          &:hover {
+            border-color: $yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+.regLogForm {
+  width: 35%;
+  margin: 50px auto;
+  text-align: center;
+
+  .regHeader {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+
+  .regForm {
+    width: 70%;
+    max-width: 400px;
+    margin: 35px auto;
+
+    .formContent {
+      background-color: $light;
+      padding: 30px 50px;
+      text-align: left;
+      margin-bottom: 35px;
+
+      input {
+        text-align: left;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 25px;
+        box-shadow: none;
+        appearance: none;
+        outline: none;
+        background-color: transparent;
+        border-style: none;
+        border-bottom: 1px solid $dark;
+        height: 35px;
+      }
+      label {
+        font-size: 14px;
+      }
+    }
+
+    .formSubmit {
+      button {
+        padding: 15px 25px;
+        margin: 0 20px;
+        background-color: transparent;
+        cursor: pointer;
+
+        .link {
+          color: $dark;
+          text-decoration: none;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}

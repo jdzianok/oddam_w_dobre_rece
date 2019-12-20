@@ -13,7 +13,7 @@ class HomeComponent extends Component {
   render() {
     return (
       <div id="start">
-        <HomeHeader state={this.state} />
+        <HomeHeader isLogged={this.props.isLogged} />
         <HomeThreeColumns />
         <HomeSimpleSteps />
         <HomeAboutUs />

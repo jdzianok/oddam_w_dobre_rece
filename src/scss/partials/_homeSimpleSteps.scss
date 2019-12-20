@@ -77,6 +77,11 @@
       height: 120px;
       color: $dark;
       background-color: transparent;
+
+      .link {
+        color: $dark;
+        text-decoration: none;
+      }
     }
   }
 }
