@@ -3,7 +3,7 @@ button {
 }
 .loginRegisterOut {
   width: 100%;
-  padding: 0 142px 30px 0;
+  padding: 0 100px 30px 0;
   display: flex;
   justify-content: flex-end;
 
@@ -72,6 +72,21 @@ button {
   .regHeader {
     font-size: 40px;
     margin-bottom: 35px;
+  }
+
+  .logoutBtn {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: transparent;
+    border: 1px solid $dark;
+
+    .link {
+      display: block;
+      text-decoration: none;
+      color: $dark;
+      padding: 10px;
+    }
   }
 
   .regForm {
